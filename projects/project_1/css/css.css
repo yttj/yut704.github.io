@@ -1,0 +1,114 @@
+.w {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.header {
+    width: 100%;
+    height: 800px;
+    line-height: 800px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 80px;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+.center span {
+    font-size: 36px;
+}
+
+.center p {
+    font-size: 24px;
+}
+
+.centers {
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+
+.centers span {
+    font-size: 36px;
+}
+
+.centers p {
+    font-size: 24px;
+}
+
+.centers img {
+    width: 420px;
+    height: 450px;
+}
+
+.list {
+    margin-top: 30px;
+    width: 90%;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.list ul li {
+    float: left;
+    margin-left: 40px;
+}
+
+.list img {
+    width: 520px;
+    height: 480px;
+}
+
+.lists {
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+    margin-left: -0px;
+    height: 480px;
+}
+
+.lists ul li {
+    float: left;
+    padding-left: 60px;
+}
+
+.lists img {
+    width: 350px;
+    height: 320px;
+}
+
+.clear {
+    clear: both
+}
+
+.btn {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.btn button {
+    background-color: #393939;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    line-height: 10px;
+    text-align: center;
+    width: 200px;
+    font-size: 14px;
+    border-radius: 40px;
+    border: 1px solid black;
+}
