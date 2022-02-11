@@ -1,23 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-font-face {
-    font-family: 'Roboto', sans-serif;
-    
-}
-
-
 body {
-    margin-top: 100px;
-    margin-left: 10vh;
+
     background-color: rgb(255, 255, 255);
     font-family: 'Roboto', sans-serif;
-    margin: 2rem;
+    margin-top:100rem;
     font-size: 20px;
-    padding-left: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 2rem;
     line-height: 2rem;
     font-weight: 100;
-    letter-spacing: 1px;
-
+    
 }
 
 ul,
@@ -27,10 +19,59 @@ ol {
 
 .italic {
     font-style: italic;
-    font-size: 20px;
+    font-size: 17px;
+    margin-top: 30pt;
+    margin-bottom: 30pt;
 }
 
-h1{
-    font-size: 15rem;
+#tudou{
+    background-color: rgb(99, 99, 99);
+    padding: .4in;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Anton', sans-serif;
+  }
+  
+  h1 {
+    font-size:5rem;
+    margin-bottom:1.5rem;
+    margin-top: 0.5rem;
+    font-weight: 700;
+    color: azure;
+  }
+  
+  h2 {
+    font-size:1.5rem;
+    font-weight: 400;
+  }
+  
+  h3 {
+    font-size:3rem;
+    margin-bottom:1rem;
+  }
+  
+  h4 {
+    font-size:1.5rem;
+    margin-bottom:1rem;
+  }
+  
+  h5 {
+    font-size: 2.5;
+    line-height: 2;
+    margin-bottom:.5rem;
+  }
+  
+  h6 {
+    font-size:1rem;
+    font-weight: 100;
+  }
+  
+  p{
+    font-family: 'Anton', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom:.5rem;
+    color:var(--body-text-color);
+  }
+  
