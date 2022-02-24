@@ -13,7 +13,7 @@
 
    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
    html {
-    color: rgb(0, 0, 0);
+    color: rgb(53, 53, 53);
     font-size: 1em;
     line-height: 1.4;
     padding:1.5rem;
@@ -112,7 +112,7 @@
   }
 
   .vl {
-    border-left: 5px solid rgb(0, 0, 0);
+    border-left: 5px solid rgb(53, 53, 53);
     height: 300px;
     position:absolute;
     left: 50%;
@@ -125,9 +125,10 @@
     text-align: center;
     color: rgb(255, 255, 255);
     font-size: 5000;
+
 }
 
-.btn button {
+  .btn button {
     background-color: #ffffff;
     color: rgb(255, 255, 255);
     height: 60px;
@@ -181,8 +182,8 @@ h5 {
 }
 
 h6 {
-  font-size:2rem;
-  margin-bottom:0.5rem;
+  font-size:1.7rem;
+  margin-bottom:0.5px;
   font-weight: 400;
 }
 
