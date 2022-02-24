@@ -11,7 +11,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=ZCOOL+QingKe+HuangYou&display=swap');
 
    html {
     color: rgb(0, 0, 0);
@@ -57,7 +57,7 @@
   }
 
   .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -67,10 +67,10 @@
   .container {
     position: relative;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
   
-  .left {
+  .left-topic {
     position: absolute;
     bottom: 50px;
     left: 16px;
@@ -84,7 +84,8 @@
   }
   
   .top-right {
-    position: absolute;
+    grid-column: auto auto;
+    position:absolute;
     top: 8px;
     right: 16px;
   }
@@ -111,16 +112,26 @@
     padding: 10px;
   }
 
+  .vl {
+    border-left: 5px solid rgb(0, 0, 0);
+    height: 300px;
+    position:absolute;
+    left: 50%;
+    margin-left: -30px;
+    top: 100;
+  }
+  
+
   /* Typography */
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'DM Sans', sans-serif;
   
 }
 
 h1 {
-  font-size:3rem;
+  font-size:2.5rem;
   margin-bottom:0.5rem;
   font-weight: 700;
 }
@@ -129,53 +140,46 @@ h2 {
   font-size:3.5rem;
   margin-bottom:0.5rem;
   font-weight: 800;
-  padding-top: 600px;
-
 }
 
 h3 {
   font-size:2rem;
-  margin-bottom:0.5rem;
+  line-height: 5px;
   font-weight: 400;
-  padding-top: 630px;
 }
 
 h4 {
   font-size:2.1rem;
-  margin-bottom:0.5rem;
+  line-height: 5px;  
   font-weight: 400;
-  padding-top: 660px;
 }
 
 h5 {
   font-size: 2.3rem;
-  margin-bottom:0.5rem;
+  line-height: 0.1rem;
   font-weight: 400;
-  padding-top: 680px
   
 }
 
 h6 {
   font-size:2rem;
   margin-bottom:0.5rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 p{
   grid-template-columns: auto auto;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 1rem;
-  line-height: 1;
-  margin-bottom:1rem;
-  color: rgb(0, 0, 0)
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 2.6rem;
+  margin-bottom:0.5rem;
 }
 
 p2{
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 2.6rem;
   line-height: 1;
-  margin-bottom:1rem;
-  color: rgb(0, 0, 0)
+  margin-bottom:.5rem;
+  color: rgb(255, 255, 255)
 }
 
 
@@ -187,6 +191,10 @@ p2{
   line-height: 1.5;
   padding:2rem;
   color: green
+}
+
+.clear {
+  clear: both
 }
   
   /*
