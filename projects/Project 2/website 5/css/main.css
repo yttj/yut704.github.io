@@ -120,6 +120,25 @@
     top: 100;
   }
 
+  .btn {
+    margin-top: 300px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 5000;
+}
+
+.btn button {
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    height: 60px;
+    line-height: 100px;
+    text-align: center;
+    width: 200px;
+    font-size: 100px;
+    border-radius: 100px;
+    border: 1px solid rgb(255, 255, 255);
+}
+
   
 
   /* Typography */
