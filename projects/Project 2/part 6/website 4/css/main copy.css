@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Murecho:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* BROWSER SIZE 1317 x 795 */
+/* BROWSER SIZE 2634 x 1590 */
+html {
+  box-sizing: border-box;
+  cursor: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: wremena;
+  background-color: #000000;
+  letter-spacing: .01em;
+  line-height: 1.5em;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  padding: 0;
+  /* cursor: none; */
+}
+
+
+div.handcoding-is-fun {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left::-webkit-scrollbar,
+.right::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.left,
+.right {
+  height: 100vh;
+  width: 50%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.left { z-index: 10; }
+.right {z-index: 10;}
+
+.slide {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 50vh;
+}
+
+.left .slide { justify-content: flex-end; }
+.right .slide { justify-content: flex-start; }
+.slide p { margin: 0; font-size: 3em;}
+.slide p.lg { font-size: 1.35em;}
+.slide p.lg em { font-size: 1.8675em; }
+.left .slide p { padding-right: 65px; }
+.right .slide p { padding-left: 65px;}
+.slide img {
+  width: 80%;
+  @media screen and (min-width: 768px) {
+    max-width: 85%;
+    max-height: 85%;
+  }
+}
+
+.slide.m.med img {
+  width: 90%;
+  @media screen and (min-width: 768px) {
+    width: auto;
+    height: 30%;
+  }
+}
+
+.slide.m.lg img {
+  width: 80%;
+  @media screen and (min-width: 768px) {
+    width: auto;
+    height: 80%;
+  }
+}
+
+
+p.text span {
+  display: block;
+  margin-bottom: 4px;
+  font-size: .675em;
+}
+p.text span.scroll {
+  margin: 8px;
+  font-size: .525em;
+  letter-spacing: .03em;
+}
+
+@media screen and (min-width: 768px) {
+  p.text {
+    font-size: 1.325em;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .slide img {
+    width: auto;
+    max-width: 85%;
+    max-height: 85%;
+  }
+
+  .slide.m.med img {
+      width: auto;
+      height: 65%;
+  }
+
+  .slide.m.lg img {
+      width: auto;
+      height: 80%;
+  }
+}
+
+
+  /* Typography */
+
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Murecho', sans-serif;
+    
+  }
+  
+  h1 {
+    font-size:2.5rem;
+    margin-bottom:0.5rem;
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size:3.5rem;
+    margin-bottom:0.5rem;
+    font-weight: 800;
+  }
+  
+  h3 {
+    font-size:2rem;
+    font-weight: 400;
+    margin-bottom:0.5rem;
+    line-height: normal;
+  }
+  
+  h4 {
+    font-size:2.1rem;
+    line-height: 5px;  
+    font-weight: 400;
+  }
+  
+  h5 {
+    font-size: 2.3rem;
+    line-height: 0.1rem;
+    font-weight: 400;
+    
+  }
+  
+  h6 {
+    font-size:1.7rem;
+    margin-bottom:0.5px;
+    font-weight: 400;
+  }
+  
+  p{
+    grid-template-columns: auto auto;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 2.6rem;
+    margin-bottom:0.5rem;
+  }
+  
+  p2{
+    font-family: 'Anonymous Pro', monospace;
+    font-size: 2.6rem;
+    line-height: 1;
+    margin-bottom:.5rem;
+    color: rgb(255, 255, 255)
+  }
+  
+  
+  .pull-quote {
+    font-size: 2.25rem;
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    font-weight:400;  
+    line-height: 1.5;
+    padding:2rem;
+    color: green
+  }
+  
+  .clear {
+    clear: both
+  }
