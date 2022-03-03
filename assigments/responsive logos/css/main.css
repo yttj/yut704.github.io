@@ -39,31 +39,50 @@
     grid-gap:2rem;
   }
 
-  .dot {
-    height: 400px;
-    width: 400px;
-    background-color: rgb(243, 241, 241);
-    border-radius: 50%;
-    display: inline-block;
-    margin-top: 60px;
-    color: rgb(94, 93, 93);
-    font-size: 50px;
-    margin-top: 600;
 
+  .dot {
+    width: 500px;
+    height: 500px;
+    line-height: 500px;
+    border-radius: 50%;
+    font-size: 50px;
+    color:#b3d4fc;
+    text-align: center;
+    background:#fff
   }
 
+  @media screen and (min-width: 200px) {
+    .dot {
+      font-size: 5rem;
+      padding: 0 0.2rem;
+      color: #b3d4fc;
+      border:10px solid #b3d4fc;
+      text-align: center;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    .dot {
+      font-size: 5rem;
+      color: aquamarine;
+      border:10px solid aquamarine;
+      text-align: center;
+    }
+  }
 
 
 
   @media screen and (min-width: 1200px) {
    .dot {
-    font-size: 8rem;
+    font-size: 5rem;
     padding: 0 0.5rem;
     border: 10px solid #ffd902;
     color: #ffd902;
     text-align:center
     }
   }
+
 
 
 
