@@ -132,6 +132,10 @@ text-decoration: none;
 margin-right: 30px;
 }
 
+a:hover{
+  color: rgb(255, 230, 0)
+}
+
 p.text span {
   display: block;
   margin-bottom: 4px;
