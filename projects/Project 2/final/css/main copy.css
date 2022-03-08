@@ -60,9 +60,10 @@ div.handcoding-is-fun {
 }
 
 .left::-webkit-scrollbar {
-  width: 0;
+  width: 0px;
 
 }
+
 
 
 .left,
@@ -155,7 +156,12 @@ p.text span.scroll {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  h1{
+    font-size: 1rem;
+  }
 }
+
 
 
   /* Typography */
@@ -170,6 +176,7 @@ p.text span.scroll {
     font-size:2.5rem;
     margin-bottom:0.5rem;
     font-weight: 700;
+    line-height: 60px;
   }
   
   h2 {
@@ -192,7 +199,7 @@ p.text span.scroll {
   
   h5 {
     font-size: 2.3rem;
-    line-height: auto;
+    line-height: 60px;
     font-weight: 400;
     
   }
@@ -210,25 +217,3 @@ p.text span.scroll {
     margin-bottom:0.5rem;
   }
   
-  p2{
-    font-family: 'Anonymous Pro', monospace;
-    font-size: 2.6rem;
-    line-height: 1;
-    margin-bottom:.5rem;
-    color: rgb(255, 255, 255)
-  }
-  
-  
-  .pull-quote {
-    font-size: 2.25rem;
-    font-family: 'Anton', sans-serif;
-    font-style: italic;
-    font-weight:400;  
-    line-height: 1.5;
-    padding:2rem;
-    color: green
-  }
-  
-  .clear {
-    clear: both
-  }
