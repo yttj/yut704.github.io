@@ -21,6 +21,7 @@ body {
   /* cursor: none; */
 }
 
+
 .hover-class:hover {
   color: rgb(255, 251, 0)
 }
@@ -43,27 +44,47 @@ div.handcoding-is-fun {
 
 /* Track */
 .right::-webkit-scrollbar-track {
-  background: #686868; 
+  background: #000000; 
   overflow: hidden;
 }
  
 /* Handle */
 .right::-webkit-scrollbar-thumb {
-  background: rgb(0, 0, 0); 
+  background: rgb(119, 119, 119); 
   overflow: hidden;
 }
 
 /* Handle on hover */
 .right::-webkit-scrollbar-thumb:hover {
-  background: rgb(80, 80, 80); 
+  background: rgb(119, 119, 119); 
   overflow: hidden;
 }
 
-.left::-webkit-scrollbar {
-  width: 0px;
 
+
+.left::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 60px;
+  overflow: hidden;
 }
 
+/* Track */
+.left::-webkit-scrollbar::-webkit-scrollbar-track {
+  background: #686868; 
+  overflow: hidden;
+}
+ 
+/* Handle */
+.left::-webkit-scrollbar-thumb {
+  background: rgb(119, 119, 119); 
+  overflow: hidden;
+}
+
+/* Handle on hover */
+.left::-webkit-scrollbar-thumb:hover {
+  background: rgb(80, 80, 80); 
+  overflow: hidden;
+}
 
 
 .left,
@@ -74,6 +95,8 @@ div.handcoding-is-fun {
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 }
+
+
 
 .left { z-index: 10; }
 .right {z-index: 10;}
@@ -173,19 +196,22 @@ p.text span.scroll {
   }
   
   h1 {
+    padding-right: 55px;
     font-size:2.5rem;
     margin-bottom:0.5rem;
-    font-weight: 700;
+    font-weight: 700px;
     line-height: 60px;
   }
   
   h2 {
+    padding-right: 55px;
     font-size:3.5rem;
     margin-bottom:0.5rem;
-    font-weight: 800;
+    font-weight: 1000px;
   }
   
   h3 {
+    padding-right: 55px;
     font-size:2rem;
     font-weight: 400;
     margin-bottom:0.5rem;
@@ -193,18 +219,20 @@ p.text span.scroll {
   }
   
   h4 {
+    padding-right: 55px;
     font-size:2.1rem;
     font-weight: 400;
   }
   
   h5 {
     font-size: 2.3rem;
-    line-height: 60px;
+    line-height: 30px;
     font-weight: 400;
     
   }
   
   h6 {
+    padding-right: 55px;
     font-size:1.7rem;
     margin-bottom:0.5px;
     font-weight: 400;
