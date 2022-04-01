@@ -49,6 +49,30 @@
 
 }
 
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+#app {
+  width: 100%;
+  height: 15%;
+  justify-content: space-between;
+}
+
+#app div.step {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#app div.step p {
+  color: #ffffff;
+}
+
 
   /* Typography */
 
