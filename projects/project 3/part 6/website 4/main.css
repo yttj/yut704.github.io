@@ -1,0 +1,123 @@
+
+
+#background  {
+   margin: 0px auto 0px auto;
+   visibility: visible;
+   height: 2942px;
+   width: 4000px;
+   position: relative;
+   background-color: #FFFFFF;
+   background-image: none;
+}
+
+#i1button  {
+   z-index: 4;
+   left: 203px;
+}
+
+
+
+a{
+   color:black;
+   text-decoration: dashed;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   position: sticky;
+   padding-bottom: 100px;
+}
+
+h1{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 50px;
+}
+
+.hover-class:hover {
+   color: rgb(165, 0, 0)
+}
+
+
+
+#img  {
+   background: url(img_2/AAA.jpg) no-repeat;
+   position: absolute;
+   left: 400px;
+   top: 49px;
+   z-index: 4;
+   width: 3728px;
+   height: 2893px;
+  }
+
+
+#img2  {
+    background: url(img_2/Bangkok\ flower\ market.jpg) no-repeat;
+    visibility: visible;
+    position: absolute;
+    left: 1150px;
+    top: 49px;
+    z-index: 4;
+    width: 1000px;
+    height: 1000px;
+ }
+
+ #img3  {
+    background: url(img_2/Breakfast\ lady.jpg) no-repeat;
+    visibility: visible;
+    position: absolute;
+    left: 2200px;
+    top: 49px;
+    z-index: 4;
+    width: 1000px;
+    height: 1000px;
+ }
+
+ #img4  {
+    background: url(img_2/Causeway\ bay\ HK.jpg) no-repeat;
+    visibility: visible;
+    position: absolute;
+    left: 2950px;
+    top: 49px;
+    z-index: 4;
+    width: 1000px;
+    height: 1000px;
+ }
+
+ #img5  {
+    background: url(img_2/Dongdaemun\ Market.jpg) no-repeat;
+    visibility: visible;
+    position: absolute;
+    left: 400px;
+    top: 1100px;
+    z-index: 4;
+    width: 2000px;
+    height: 1000px;
+ }
+
+ #img6  {
+    background: url(img_2/Fish\ market\ HK.jpg) no-repeat;
+    visibility: visible;
+    position: absolute;
+    left: 2500px;
+    top: 1100px;
+    z-index: 4;
+    width: 1000px;
+    height: 1000px;
+ }
+
+ #col  {
+   background: url(img_2/project1-04.jpg) no-repeat;
+   position: absolute;
+   left: 100px;
+   top: 49px;
+   z-index: 4;
+   width: 3728px;
+   height: 2893px;
+}
+
+ 
+
+
+html, body  {
+   padding: 0px;
+   margin: 0px;
+   background-color: #FFFFFF;
+}
+
