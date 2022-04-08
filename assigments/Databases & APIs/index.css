@@ -1,0 +1,76 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0.5rem;
+  padding: 0;
+}
+
+div#information {
+  margin: 5rem;
+  width: 100vw;
+}
+
+div#information h1 {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+div#information p {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+main#app {
+  display: flex;
+  flex: 5;
+  flex-wrap: wrap;
+}
+
+div.container {
+  padding: 2%;
+  border-radius: 50px;
+  border: 1px solid #999;
+  background-color: #cccccc;
+  margin: 2%;
+  flex-basis: 46%;
+  transition: border-color 0.15s;
+}
+
+div.container:hover {
+  border-color: #222;
+}
+
+img.image {
+  max-width: 100%;
+}
+
+p.title {
+  padding: 5px;
+  border-radius: 6px;
+  background-color: white;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  div.container {
+    padding: 2%;
+    margin: 2%;
+    flex-basis: 29%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  div.container {
+    padding: 2%;
+    margin: 2%;
+    flex-basis: 21%;
+  }
+}
