@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta name="generator" content="SiteGrinder 2.1.4   http://www.medialab.com/sitegrinder" />
+<meta name="author" content="lutz bacher lutz" />
+<meta name="keywords" content="lutz bacher lutz bacher" />
+<meta name="description" content="lutz bacher lutz bacher lutz" />
+<title>Supermarket</title>
+
+
+
+<link rel="stylesheet" type="text/css" media="screen, print, projection"  href="main.css"></link>
+</head>
+<body>
+
+
+<h1 style="margin-left: 100px; position: fixed; z-index: 100;">Category</h1>
+
+
+<a href="photography.html">
+    <div class="header hover-class" id="myHeader"><h2 style="margin-left: 110px; position: fixed; z-index: 2; margin-top: 110px;">Photography</h2>
+    </div>
+
+<a href="portraiture.html">
+    <div class="hover-class"><h2 style="margin-left: 110px; position: fixed; z-index: 100; margin-top: 160px;">Portraiture</h2>
+    </div>
+
+<a href="Collage.html">
+    <div class="hover-class"><h2 style="margin-left: 110px; position: fixed; z-index: 2; margin-top: 210px;">Collage</h2>
+</div>
+
+<a href="Collage.html">
+    <div class="hover-class"><h2 style="margin-left: 110px; position: fixed; z-index: 2; margin-top: 260px;">Red</h2>
+</div>
+
+<a href="Collage.html">
+    <div class="hover-class"><h2 style="margin-left: 110px; position: fixed; z-index: 2; margin-top: 310px;">Blue</h2>
+</div>
+
+<a href="Collage.html">
+    <div class="hover-class"><h2 style="margin-left: 110px; position: fixed; z-index: 2; margin-top: 360px;">Black and White</h2>
+</div>
+
+
+<div id="background">
+<div id="img"></div>
+<div id="img2"></div>
+<div id="img3"></div>
+<div id="img4"></div>
+<div id="img5"></div>
+<div id="img6"></div>
+<div id="img7"></div>
+<div id="img8"></div>
+</div>
+
+
+<script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("myHeader");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+
+
+</body>
+</html>
