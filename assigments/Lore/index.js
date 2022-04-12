@@ -11,8 +11,7 @@ const users = [{
   attack: 77, 
 }, {
 
-},
-{
+},{
   name: "Grafted Blade Greatsword", 
   description: "Storied sword and treasure of Castle Sol that depicts an eclipsed sun drained of color.",
   attack: 157, 
@@ -21,7 +20,7 @@ const users = [{
 // STEP 2: DOM REFERENCES
 const usersContainerElement = document.querySelector('#users')
 const showUsersWithAttackInDollarsButtonElement = document.querySelector("button#map")
-const showAuthenticatedWeaponButtonElement = document.querySelector('button#authenticated')
+const showAttackAscendingElement = document.querySelector('button#authenticated')
 const showUsersSortedByNameAscendingButtonElement = document.querySelector('button#sort-ascending')
 const showUsersSortedByNameDescendingButtonElement = document.querySelector('button#sort-descending')
 
@@ -64,15 +63,24 @@ const usersWithAttackInDollars = users.map((user) => {
         attack: user.attack, 
         description: user.description
     }
-    const attackInDollars = userWithAttackInDollars.attack / 100 
+    const attackInDollars = userWithAttackInDollars.attack / 10
     userWithAttackInDollars.attack = '$' + attackInDollars
     return userWithAttackInDollars
 })
 
 // FILTER
-const AuthenticatedWeapon = users.filter((user) => {
-    return user.description
-})
+const AttackAscending = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+function isPrime(num) {
+  for (let i = 2; num > i; i++) {
+    if (num % i == 0) {
+      return false;
+    }
+  }
+  return num > 1;
+}
+
+console.log(AttackAscending.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
 
 // SORT 
 const usersSortedByNameAscending = users.sort((userA, userB) => {
@@ -95,10 +103,6 @@ showUsersWithAttackInDollarsButtonElement.addEventListener('click', () => {
     addUsers(usersWithAttackInDollars)
 })
 
-showAuthenticatedWeaponButtonElement.addEventListener('click', () => {
-    removeUsers()
-    addUsers(authenticatedUsers)
-})
 
 showUsersSortedByNameAscendingButtonElement.addEventListener('click', () => {
     removeUsers()
@@ -108,6 +112,11 @@ showUsersSortedByNameAscendingButtonElement.addEventListener('click', () => {
 showUsersSortedByNameDescendingButtonElement.addEventListener('click', () => {
     removeUsers()
     addUsers(usersSortedByNameDescending)
+})
+
+showAttackAscendingElement.addEventListener('click', () => {
+  removeUsers()
+  addUsers(AttackAscending)
 })
 
 // START APP

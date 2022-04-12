@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Market</title>
+</head>
+<style>
+
+    .con{
+        width: 150%;
+        /*background-color: coral;*/
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .con>img{
+        margin: 10px;
+    }
+    img{
+        display: block;
+    }
+    .menu{
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        background-color: rgba(255,255,255,0.8);
+        padding: 20px;
+        box-sizing: border-box;
+        z-index: 999;
+    }
+
+</style>
+<body>
+
+<div class="con"></div>
+<div class="menu">
+    <a href="#">Description</a>
+    <br>
+    <br>
+    <a href="#">All Images</a>
+    <br>
+    <br>
+    <a href="#">Portraiture</a>
+    <br>
+    <br>
+    <a href="#">Collage</a>
+    <br>
+    <br>
+    <a href="#">Photography</a>
+</div>
+<script>
+    let AllArr = []
+    let Portraiture = []
+    let Collage = []
+    let Photography = []
+    let innerHtml = ``
+    fetch("https://api.airtable.com/v0/appi9Jj4DWt5fTjXX/Projects?api_key=key9DzUgIPbM8v99S").then(res => {
+        return res.json()
+    }).then(json => {
+        let { records } = json
+        AllArr = records[3].fields.images
+        Portraiture = records[0].fields.images
+        Collage = records[1].fields.images
+        Portraiture = records[2].fields.images
+        console.log(Portraiture);
+        console.log(Collage);
+        console.log(Portraiture);
+        console.log(AllArr);
+
+        for(let i = 0; i < AllArr.length; i++){
+            innerHtml = innerHtml + `<img src="${AllArr[i].thumbnails.large.url}">`
+        }
+        document.querySelector(".con").innerHTML = innerHtml
+    }).catch(err => {
+        console.log(err);
+    })
+
+</script>
+</body>
+</html>
