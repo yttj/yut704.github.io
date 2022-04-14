@@ -20,7 +20,7 @@ const users = [{
 // STEP 2: DOM REFERENCES
 const usersContainerElement = document.querySelector('#users')
 const showUsersWithAttackInDollarsButtonElement = document.querySelector("button#map")
-const showAttackAscendingElement = document.querySelector('button#authenticated')
+const showAttackAscendingElement = document.querySelector('button#description')
 const showUsersSortedByNameAscendingButtonElement = document.querySelector('button#sort-ascending')
 const showUsersSortedByNameDescendingButtonElement = document.querySelector('button#sort-descending')
 
@@ -69,18 +69,9 @@ const usersWithAttackInDollars = users.map((user) => {
 })
 
 // FILTER
-const AttackAscending = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
-
-function isPrime(num) {
-  for (let i = 2; num > i; i++) {
-    if (num % i == 0) {
-      return false;
-    }
-  }
-  return num > 1;
-}
-
-console.log(AttackAscending.filter(isPrime)); // [2, 3, 5, 7, 11, 13]
+const authenticatedWeapon = users.filter((user) => {
+  return user.description
+})
 
 // SORT 
 const usersSortedByNameAscending = users.sort((userA, userB) => {
