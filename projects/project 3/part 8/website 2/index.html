@@ -29,7 +29,7 @@
     }
     .menu>div{
         display: inline-block;
-        font-size: 23px;
+        font-size: 26px;
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         color: black;
         border: 2px solid black;
@@ -38,28 +38,34 @@
         cursor: pointer;
     }
     .menu>div:hover{
-        background-color: rgb(155, 0, 0);
+        background-color: black;
         color: white;
+    }
+
+    h2{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 30px;
     }
 
 </style>
 <body>
 
+    
+    <h2 style="text-align:center; margin-top: 70px;">This is a collection about Chinese open market. The collection is mostly photography and collage. This website was originally designed to craeate an online photography gallery. Large sized photos for easy viewing. </h2>
+
+
 <div class="con"></div>
 <div class="menu">
-    <div>Description</div>
+    <div onclick="clickImg('AllArr')">All Pictures</div>
     <br>
     <br>
-    <div>All Pictures</div>
+    <div onclick="clickImg('Portraiture')">Portraiture</div>
     <br>
     <br>
-    <div>Portraiture</div>
+    <div onclick="clickImg('Collage')">Collage</div>
     <br>
     <br>
-    <div>Collage</div>
-    <br>
-    <br>
-    <div>Photography</div>
+    <div onclick="clickImg('Photography')">Photography</div>
 </div>
 <script>
     let AllArr = []
@@ -82,6 +88,32 @@
     }).catch(err => {
         console.log(err);
     })
+
+    function clickImg(type) {
+        innerHtml = ``
+        switch (type){
+            case 'AllArr':
+                for(let i = 0; i < AllArr.length; i++){
+                    innerHtml = innerHtml + `<img src="${AllArr[i].thumbnails.large.url}">`
+                }
+            case 'Portraiture':
+                for(let i = 0; i < Portraiture.length; i++){
+                    innerHtml = innerHtml + `<img src="${Portraiture[i].thumbnails.large.url}">`
+                }
+            case 'Collage':
+                for(let i = 0; i < Collage.length; i++){
+                    innerHtml = innerHtml + `<img src="${Collage[i].thumbnails.large.url}">`
+                }
+            case 'Photography':
+                for(let i = 0; i < Photography.length; i++){
+                    innerHtml = innerHtml + `<img src="${Photography[i].thumbnails.large.url}">`
+                }
+            default:
+                document.querySelector(".con").innerHTML = innerHtml
+
+        }
+
+    }
 
 
 </script>
