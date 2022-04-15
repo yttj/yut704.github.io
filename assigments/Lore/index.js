@@ -107,7 +107,7 @@ showUsersSortedByNameDescendingButtonElement.addEventListener('click', () => {
 
 showAttackAscendingElement.addEventListener('click', () => {
   removeUsers()
-  addUsers(AttackAscending)
+  addUsers(authenticatedWeapon)
 })
 
 // START APP
