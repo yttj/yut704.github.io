@@ -8,10 +8,10 @@
 }
 img{
     display: block;
-    height: 770px;
+    height: 750px;
 }
 .menu{
-    background-color: rgba(255,255,255,0.8);
+
     padding: 20px 20px;
     box-sizing: border-box;
     z-index: 999;
@@ -43,10 +43,7 @@ h2{
     margin: 20px auto;
 
 }
-.active{
-    background-color: black;
-    color: white !important;
-}
+
 @media screen and (max-width: 750px){
     .con{
         width: 100%;
