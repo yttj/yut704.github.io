@@ -9,8 +9,8 @@ const tableUrl = "https://api.airtable.com/v0/app61YONuxsjiVAn7/Table%201";
 const authenticatedUrl = tableUrl + "?api_key=" + airtableApiKey;
 
 // Colors 
-const foregroundColors = ["#604F4F", "#895141", "#353A4C"] // 
-const backgroundColors = ["#EADFC9", "#80825B"]
+const foregroundColors = ["#604F4F", "#895141", "#353A4C", "#02040a", "#0040ff"] // 
+const backgroundColors = ["#EADFC9", "#80825B", "#532354", "#7d687d", "#3a8c42", "#314a33"]
 
 // SECTION 2: DOM References 
 const bodyElement = document.querySelector('body')
@@ -20,7 +20,6 @@ const typeElement = document.querySelector('#type')
 const nameElement = document.querySelector('#name')
 const regionElement = document.querySelector('#region')
 const verbElement = document.querySelector('#verb')
-const adverbElement = document.querySelector('#adverb')
 
 // SECTION 3: Application
 // Choose Foreground and Background Colors
@@ -54,9 +53,7 @@ fetch(authenticatedUrl)
     const verbs = words.filter((word) => {
         return word.fields.Type === 'verb'
     })
-    const adverbs = words.filter((word) => {
-        return word.fields.Type === 'adverb'
-    })
+
     // Set Values onto HTML Elements 
     adjectiveElement.innerHTML = adjectives[Math.floor(Math.random()*adjectives.length)].fields.Copy
     nameElement.innerHTML = names[Math.floor(Math.random()*names.length)].fields.Copy
