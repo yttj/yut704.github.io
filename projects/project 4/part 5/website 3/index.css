@@ -42,19 +42,89 @@
     font-size: 110%;
   }
 
+  #b h4:first-letter {
+    color: #cdbf00;
+  }
+
+  #c h4:first-letter {
+    color: #009f55c1;
+  }
+
+  #d h4:first-letter {
+    color: #a2bb00;
+  }
+
+  #e h4:first-letter {
+    color: #e45400;
+  }
+
+  #f h4:first-letter {
+    color: #ccff0088;
+  }
+
+  #g h4:first-letter {
+    color: #a1c900a9;
+  }
+
+  #i h4:first-letter {
+    color: #001fcda9;
+  }
+
+  #k h4:first-letter {
+    color: #00a1b0f3;
+  }
+
+  #k h4:first-letter {
+    color: #e0b300f3;
+  }
+
+  #l h4:first-letter {
+    color: #e0b300f3;
+  }
+
+  #m h4:first-letter {
+    color: #00a0e0f3;
+  }
+
+  #o h4:first-letter {
+    color: #e07400f3;
+  }
+
+  #p h4:first-letter {
+    color: #e56300f3;
+  }
+
+  #r h4:first-letter {
+    color: #fffffff3;
+  }
+
+  #t h4:first-letter {
+    color: #a343bbf3;
+  }
+
+  #u h4:first-letter {
+    color: #bbaf43f3;
+  }
+
+  #q h4:first-letter {
+    color: #ff6600;
+  }
+  
+  #z h4:first-letter {
+    color: #ffffff;
+  }
 
   input[type="button" i] {
     padding: 1px 6px;
     border-style: outset;
     border-image: initial;
     position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: white;
+    top: 50px;
+    left: 70px;
     color: black;
-    border: 2px solid black; 
-    width: 40px;
-    height: 40px;
+    font-size: 60px;
+    border: none;
+    background: none;
 }
 
   #a {

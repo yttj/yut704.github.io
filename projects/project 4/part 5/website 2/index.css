@@ -42,19 +42,41 @@
     font-size: 110%;
   }
 
+  #b h4:first-letter {
+    color: #cdbf00;
+  }
 
+  #d h4:first-letter {
+    color: #a2bb00;
+  }
+
+  #e h4:first-letter {
+    color: #e45400;
+  }
+
+  #f h4:first-letter {
+    color: #ccff0088;
+  }
+
+  #g h4:first-letter {
+    color: #ccff00;
+  }
+
+  #q h4:first-letter {
+    color: #ff6600;
+  }
+  
   input[type="button" i] {
     padding: 1px 6px;
     border-style: outset;
     border-image: initial;
     position: absolute;
-    top: 10px;
-    left: 10px;
-    background-color: white;
+    top: 50px;
+    left: 50px;
     color: black;
-    border: 2px solid black; 
-    width: 40px;
-    height: 40px;
+    font-size: 60px;
+    border: none;
+    background: none;
 }
 
   #a {
